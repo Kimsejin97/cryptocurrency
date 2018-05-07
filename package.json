@@ -1,0 +1,35 @@
+{
+  "name": "cryptocompare",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
+    "express": "^4.16.3",
+    "material-ui": "^0.20.0",
+    "morgan": "^1.9.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-promise-middleware": "^5.1.1"
+  },
+  "scripts": {
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "start:client": "cd client && yarn start",
+    "start:server": "nodemon server.js",
+    "start": "concurrently --kill-others-on-fail \"yarn start:server\" \"yarn start:client\""
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.7.0"
+  },
+  "main": "server.js",
+  "author": "KimSejin",
+  "license": "MIT"
+}
+
